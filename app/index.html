@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подсчет слов</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<section class="processing-form">
+    <div class="processing-form__input">
+        <h3>Текст для обработки</h3>
+        <textarea id="inputText">Я из страшной русской сказки, всё равно откуда ты
+Не боюсь дневного света, здесь итак хватает мглы прекращает</textarea>
+        <button onclick="processing()">Начать обработку</button>
+    </div>
+
+    <div class="processing-form__output">
+        <h3>Результат обработки</h3>
+        <textarea id="outputText"></textarea>
+
+        <div class="processing-form__count-verb">
+            <h3 class="processing-form__h3">Всего глаголов: </h3>
+            <h3 class="processing-form__h3" id="verbsCount"> </h3>
+        </div>
+
+        <div class="processing-form__count-words">
+            <h3 class="processing-form__h3">Всего слов: </h3>
+            <h3 class="processing-form__h3" id="wordsCount"> </h3>
+        </div>
+    </div>
+</section>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
